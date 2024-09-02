@@ -1,6 +1,25 @@
-export default function App() {
-  return (
-    <div className=" text-2xl">i have no idea where to start from but i will finish this in a week time</div>
-  )
-}
+import { useState } from "react";
+import Header from "./ui/Header";
+import useSticky from "./components/UseSticky";
+import Modal from "./ui/Modal";
 
+export default function App() {
+  const [openModal, setOpenModal] = useState(false);
+  const { sticky, stickyRef, headerRef } = useSticky();
+
+  function handleToggle() {
+    setOpenModal((open) => !open);
+  }
+  return (
+    <div className="">
+      <Header
+        openModal={openModal}
+        handleToggle={handleToggle}
+        sticky={sticky}
+        stickyRef={stickyRef}
+        headerRef={headerRef}
+      />
+      {openModal ?<Modal/>:''}
+    </div>
+  );
+}
