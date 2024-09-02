@@ -5,9 +5,13 @@ import { MdOutlineClose } from "react-icons/md";
 
 export default function NavBar({ openModal, handleToggle, sticky, stickyRef }) {
   return (
-    <div className={`w-full ${sticky ? "fixed top-0 left-0" : ""}`}>
+    <div
+      className={`w-full  ${
+        sticky ? "fixed top-0 left-0 bg-neutral-800/70" : "bg-gray-500/40"
+      }`}
+    >
       <nav
-        className=" flex justify-between items-center mx-3 py-3 "
+        className="flex justify-between items-center lg:mx-3 py-3 "
         ref={stickyRef}
       >
         <Logo />

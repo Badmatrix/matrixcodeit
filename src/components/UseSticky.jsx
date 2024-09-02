@@ -16,6 +16,5 @@ export default function useSticky() {
     });
     headerObserver.observe(headerRef.current);
   }, []);
-
   return { stickyRef, sticky, headerRef };
 }

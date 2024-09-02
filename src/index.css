@@ -4,9 +4,21 @@
 
 @layer base {
     body {
-         @apply font-roboto scroll-smooth 
+
+        @apply scroll-smooth text-gray-100
     }
-    .modal li{
+
+    header {
+        background: url(/philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg) no-repeat center;
+        background-size: cover;
+
+    }
+
+    .modal-overlay {
+        @apply overflow-hidden
+    }
+
+    .modal li {
         @apply cursor-pointer
     }
 }

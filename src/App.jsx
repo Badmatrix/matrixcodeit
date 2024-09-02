@@ -1,12 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "./ui/Header";
 import useSticky from "./components/UseSticky";
 import Modal from "./ui/Modal";
+import ContactMe from "./components/ContactMe";
 
 export default function App() {
   const [openModal, setOpenModal] = useState(false);
   const { sticky, stickyRef, headerRef } = useSticky();
 
+  useEffect(
+    function () {
+      openModal
+        ? document.body.classList.add("modal-overlay")
+        : document.body.classList.remove("modal-overlay");
+    },
+    [openModal]
+  );
   function handleToggle() {
     setOpenModal((open) => !open);
   }
@@ -19,7 +28,9 @@ export default function App() {
         stickyRef={stickyRef}
         headerRef={headerRef}
       />
-      {openModal ?<Modal/>:''}
+      <ContactMe />
+
+      {openModal ? <Modal handleToggle={handleToggle} /> : ""}
     </div>
   );
 }
