@@ -19,6 +19,6 @@
     }
 
     .modal li {
-        @apply cursor-pointer
+        @apply cursor-pointer transition-all ease-in-out duration-500 w-fit hover:text-slate-400 py-2
     }
 }
