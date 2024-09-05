@@ -2,6 +2,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 // import { IoIosMail } from "react-icons/io";
+import { FaDev } from "react-icons/fa";
 import SocialItem from "./SocialItem";
 const socials = [
   // {
@@ -28,10 +29,16 @@ const socials = [
     icon: <FaGithub />,
     link: "https://github.com/Badmatrix",
   },
+  {
+    id: 5,
+    name: "Github",
+    icon: <FaDev />,
+    link: "https://dev.to/badmatrix",
+  },
 ];
 export default function Socials() {
   return (
-    <ul className="flex space-x-5 text-3xl justify-center md:justify-normal">
+    <ul className="flex justify-center space-x-5 text-3xl md:justify-normal">
       {socials.map((social) => (
         <SocialItem key={social.id} social={social} />
       ))}

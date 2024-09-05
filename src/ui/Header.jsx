@@ -5,6 +5,7 @@ import Button from "./Button";
 import NavBar from "./NavBar";
 import Socials from "../components/Socials";
 import HeaderIntro from "./HeaderIntro";
+import { Fade } from "react-awesome-reveal";
 
 export default function Header({
   openModal,
@@ -32,23 +33,31 @@ export default function Header({
           stickyRef={stickyRef}
         />
         <main className="mx-5 lg:mx-10 lg:my-5 lg:flex lg:flex-row-reverse lg:items-center lg:justify-center lg:gap-x-10 lg:py-7">
-          <figure className="aspect-square h-fit lg:aspect-auto lg:w-1/4 w-52 mx-auto">
+          <figure className="mx-auto aspect-square h-fit w-52 lg:aspect-auto lg:w-1/4">
             <img
               src="/slackDP.jpg"
               alt="my image"
-              className="h-full w-full rounded-full lg:rounded-lg border-2 border-neutral-500 "
+              className="h-full w-full rounded-full border-2 border-neutral-500 lg:rounded-lg"
             />
-            <div className="my-2 flex justify-center py-3">
-              <Socials />
-            </div> 
+
+            <Fade direction="up">
+              <div className="my-2 flex justify-center py-3">
+                <Socials />
+              </div>
+            </Fade>
           </figure>
-          <section className="lg:w-2/4 mx-auto">
-            <div className="text-base leading-7 text-ellipsis">
-              <HeaderIntro />I drive to create exceptional digital experiences,
-              with a strong foundation in web development and system
-              administration, I deliver responsive, user-friendly solutions that
-              meet the highest standards of quality.
+
+          <section className="mx-auto lg:w-2/4">
+            <div className="text-ellipsis text-base leading-7 md:text-lg">
+              <HeaderIntro />
+              <Fade direction="up">
+                I drive to create exceptional digital experiences, with a strong
+                foundation in web development and system administration, I
+                deliver responsive, user-friendly solutions that meet the
+                highest standards of quality.
+              </Fade>
             </div>
+
             <div className="mt-3 flex items-center justify-center space-x-3 text-nowrap font-semibold lg:justify-normal">
               <Button className="bg-blue-400 px-3 py-3 text-neutral-800 shadow-inner shadow-blue-800 hover:bg-blue-500">
                 Get in touch
