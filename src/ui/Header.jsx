@@ -1,7 +1,10 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/prop-types */
 import { BsDownload } from "react-icons/bs";
 import Button from "./Button";
 import NavBar from "./NavBar";
+import Socials from "../components/Socials";
+import HeaderIntro from "./HeaderIntro";
 
 export default function Header({
   openModal,
@@ -20,41 +23,47 @@ export default function Header({
     document.body.removeChild(link);
   }
   return (
-    <header className=" h-screen" ref={headerRef}>
-      <div className="bg-neutral-900/95 h-full">
+    <header className="h-screen" ref={headerRef}>
+      <div className="h-full bg-neutral-900/95">
         <NavBar
           openModal={openModal}
           handleToggle={handleToggle}
           sticky={sticky}
           stickyRef={stickyRef}
         />
-        <main className="md:flex flex-row-reverse my-5 mx-3">
-          <figure className="w-fit md:w-full border-2 overflow-hidden rounded-3xl">
-            {/* <img src="/slackDP.jpg" alt="my image" /> */}
+        <main className="mx-5 lg:mx-10 lg:my-5 lg:flex lg:flex-row-reverse lg:items-center lg:justify-center lg:gap-x-10 lg:py-7">
+          <figure className="aspect-square h-fit lg:aspect-auto lg:w-1/4 w-52 mx-auto">
+            <img
+              src="/slackDP.jpg"
+              alt="my image"
+              className="h-full w-full rounded-full lg:rounded-lg border-2 border-neutral-500 "
+            />
+            <div className="my-2 flex justify-center py-3">
+              <Socials />
+            </div> 
           </figure>
-          <div className="mx-5 text-xl font-quicksand text-gray-200 mt-5">
-            <div className="">
-              Hello! I'm Badmus Hameed, a passionate Frontend Developer and IT
-              Support specialist with a drive to create exceptional digital
-              experiences. With a strong foundation in web development and
-              system administration, I deliver responsive, user-friendly
-              solutions that meet the highest standards of quality.
+          <section className="lg:w-2/4 mx-auto">
+            <div className="text-base leading-7 text-ellipsis">
+              <HeaderIntro />I drive to create exceptional digital experiences,
+              with a strong foundation in web development and system
+              administration, I deliver responsive, user-friendly solutions that
+              meet the highest standards of quality.
             </div>
-            <div className="flex space-x-5 font-semibold items-center">
-              <Button className="bg-blue-500 px-3 py-3 hover:bg-blue-800">
-                Learn more
+            <div className="mt-3 flex items-center justify-center space-x-3 text-nowrap font-semibold lg:justify-normal">
+              <Button className="bg-blue-400 px-3 py-3 text-neutral-800 shadow-inner shadow-blue-800 hover:bg-blue-500">
+                Get in touch
               </Button>
               <Button
-                className="bg-red-500 px-3 py-3 hover:bg-blue-800"
+                className="justify-center bg-slate-200 px-3 py-3 text-neutral-800 shadow-inner shadow-slate-600 hover:bg-slate-300"
                 onclick={handleDownload}
               >
-                <div className="flex space-x-3">
-                  <BsDownload className="text-xl font-bold" />
+                <div className="flex items-center justify-center space-x-3">
+                  <BsDownload className="text-lg font-bold" />
                   <span> Download cv</span>
                 </div>
               </Button>
             </div>
-          </div>
+          </section>
         </main>
       </div>
     </header>

@@ -7,6 +7,7 @@ export default {
         pacifico: ["Pacifico"],
         roboto: ["Roboto"],
         quicksand: ["Quicksand"],
+        nerko:['Nerko one']
       },
     },
   },

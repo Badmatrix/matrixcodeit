@@ -1,15 +1,15 @@
 import { FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
-import { IoIosMail } from "react-icons/io";
+// import { IoIosMail } from "react-icons/io";
 import SocialItem from "./SocialItem";
 const socials = [
-  {
-    id: 1,
-    name: "email",
-    icon: <IoIosMail />,
-    link: "mailto: badmushameed2008@gmail.com",
-  },
+  // {
+  //   id: 1,
+  //   name: "email",
+  //   icon: <IoIosMail />,
+  //   link: "mailto: badmushameed2008@gmail.com",
+  // },
   {
     id: 2,
     name: "X/twitter",
@@ -17,16 +17,16 @@ const socials = [
     link: "https://x.com/matrix_icode",
   },
   {
-    id: 3,
-    name: "Github",
-    icon: <FaGithub />,
-    link: "https://github.com/Badmatrix",
-  },
-  {
     id: 4,
     name: "Linkedln",
     icon: <FaLinkedin />,
     link: "https://linkedin.com/in/badmus-hameed-37211b225",
+  },
+  {
+    id: 3,
+    name: "Github",
+    icon: <FaGithub />,
+    link: "https://github.com/Badmatrix",
   },
 ];
 export default function Socials() {

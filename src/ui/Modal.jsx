@@ -3,7 +3,7 @@ import { MdOutlineClose } from "react-icons/md";
 
 export default function Modal({ handleToggle }) {
   return (
-    <div className="modal absolute top-0 right-0 bg-slate-700/95 py-10 w-full md:w-1/3 xl:w-1/4 h-screen space-y-8">
+    <div className="modal absolute top-0 right-0 bg-slate-700 py-10 w-full md:w-1/3 xl:w-1/4 h-screen space-y-8">
       <div className="px-5">
         <MdOutlineClose
           className="text-4xl hover:text-slate-300 cursor-pointer transition-all ease-in-out duration-200"
