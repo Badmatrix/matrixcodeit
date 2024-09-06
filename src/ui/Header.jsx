@@ -13,6 +13,7 @@ export default function Header({
   sticky,
   stickyRef,
   headerRef,
+  contactRef
 }) {
   function handleDownload() {
     const pdfUrl = "HAMEED OLADIMEJI CV FE.pdf";
@@ -22,6 +23,13 @@ export default function Header({
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+  }
+  function gotoContact() {
+    document.body.classList.remove("modal-overlay");
+    window.scrollTo({
+      top: contactRef.current.offsetTop,
+      behavior: "smooth",
+    });
   }
   return (
     <header className="h-screen" ref={headerRef}>
@@ -50,7 +58,7 @@ export default function Header({
           <section className="mx-auto lg:w-2/4">
             <div className="text-ellipsis text-base leading-7 md:text-lg">
               <HeaderIntro />
-              <Fade direction="up">
+              <Fade direction="up" triggerOnce>
                 I drive to create exceptional digital experiences, with a strong
                 foundation in web development and system administration, I
                 deliver responsive, user-friendly solutions that meet the
@@ -59,7 +67,10 @@ export default function Header({
             </div>
 
             <div className="mt-3 flex items-center justify-center space-x-3 text-nowrap font-semibold lg:justify-normal">
-              <Button className="bg-blue-400 px-3 py-3 text-neutral-800 shadow-inner shadow-blue-800 hover:bg-blue-500">
+              <Button
+                onclick={gotoContact}
+                className="bg-blue-400 px-3 py-3 text-neutral-800 shadow-inner shadow-blue-800 hover:bg-blue-500"
+              >
                 Get in touch
               </Button>
               <Button

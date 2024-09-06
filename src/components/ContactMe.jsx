@@ -15,7 +15,7 @@ export default function ContactMe({ contactRef }) {
     <div ref={contactRef}>
       <Sections className="justify-between px-10 capitalize md:flex">
         <form action="" className="space-y-2 px-5 py-5 lg:w-3/5">
-          <Fade direction="right">
+          <Fade direction="right" triggerOnce>
             <Heading className="no-underline">Contact me !</Heading>
             <p className="text-base">fill form to send me a message</p>
             <div className="space-y-5">
@@ -61,6 +61,7 @@ export default function ContactMe({ contactRef }) {
             onClick={scrollTop}
           />
         </div>
+        
       </Sections>
     </div>
   );

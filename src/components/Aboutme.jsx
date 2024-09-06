@@ -9,10 +9,10 @@ export default function Aboutme({ aboutRef }) {
   return (
     <div ref={aboutRef}>
       <Sections className="lg:px-10">
-        <Fade direction="left">
+        <Fade direction="left" triggerOnce>
           <Heading>about me</Heading>
         </Fade>
-        <Fade direction="right">
+        <Fade direction="right" triggerOnce>
           <div className="text-wrap indent-4 leading-7 tracking-wide">
             Hi, I'm Badmus Hameed, a detail-oriented Frontend Developer and IT
             Support specialist dedicated to crafting exceptional digital

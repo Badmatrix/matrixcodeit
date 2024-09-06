@@ -6,6 +6,7 @@ import ContactMe from "./components/ContactMe";
 import Aboutme from "./components/Aboutme";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";
+import SkillsTech from "./components/SkillsTech";
 
 export default function App() {
   const [openModal, setOpenModal] = useState(false);
@@ -25,16 +26,20 @@ export default function App() {
   function handleToggle() {
     setOpenModal((open) => !open);
   }
+  
   return (
     <div className="text-lg">
       <Header
         openModal={openModal}
         handleToggle={handleToggle}
+        
         sticky={sticky}
         stickyRef={stickyRef}
         headerRef={headerRef}
+        contactRef={contactRef}
       />
       <Aboutme aboutRef={aboutRef} />
+      <SkillsTech/>
       <Projects projectRef={projectRef} />
 
       <ContactMe contactRef={contactRef} />

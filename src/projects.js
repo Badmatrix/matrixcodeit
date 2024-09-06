@@ -1,13 +1,13 @@
 export const projects = [
-  {
-    id: 6,
-    name: "oak chalet",
-    image1: "/projects/oak chalet 1.jpg",
-    image2: "/projects/oak chalet 1.jpg",
-    text: "",
-    link: "",
-    tech: ["React", "styled component", "tanstack query"],
-  },
+  // {
+  //   id: 6,
+  //   name: "oak chalet",
+  //   image1: "/projects/oak chalet 1.jpg",
+  //   image2: "/projects/oak chalet 1.jpg",
+  //   text: "",
+  //   link: "",
+  //   tech: ["React", "styled component", "tanstack query"],
+  // },
   {
     id: 2,
     name: "fast pizza",
@@ -15,7 +15,7 @@ export const projects = [
     image2: "/projects/fastpizza 2.jpg",
     text: "",
     link: "https://matrixfast-pizza.vercel.app/",
-    tech: ["React", "styled component", "tanstack query"],
+    tech: ["React", "Tailwindcss", "RTK","Redux"],
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const projects = [
     image2: "/projects/worldwise 2.jpg",
     text: "",
     link: "https://worldwise-six-iota.vercel.app/",
-    tech: ["React", "styled component", "tanstack query"],
+    tech: ["React", "JSON-server", "Leaflet"],
   },
 
   {
@@ -34,7 +34,7 @@ export const projects = [
     image2: "/projects/shopsmart 2.jpg",
     text: "",
     link: "https://shopsmart-wine.vercel.app/",
-    tech: ["React", "styled component", "tanstack query"],
+    tech: ["React", "Tailwindcss"],
   },
   {
     id: 7,
@@ -43,7 +43,7 @@ export const projects = [
     image2: "/projects/savory 2.jpg",
     text: "",
     link: "https://stage3-task.vercel.app",
-    tech: ["React", "styled component", "tanstack query"],
+    tech: ["React", "Tailwindcss","RTK"],
   },
 
   {
@@ -53,7 +53,7 @@ export const projects = [
     image2: "/projects/mapty 2.jpg",
     text: "",
     link: "https://mapping-matrix.vercel.app/",
-    tech: ["React", "styled component", "tanstack query"],
+    tech: ["Html","TailwindCss","Javascript"],
   },
   {
     id: 5,

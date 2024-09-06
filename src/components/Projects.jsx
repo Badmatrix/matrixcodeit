@@ -9,7 +9,7 @@ import { Fade } from "react-awesome-reveal";
 export default function Projects({projectRef}) {
   return (
     <div ref={projectRef}>
-      <Fade direction="left">
+      <Fade direction="left" triggerOnce>
         <Sections>
           <Heading>Projects</Heading>
           <ul className="mx-5 grid gap-5 md:mx-7 md:grid-cols-2 md:gap-7 lg:mx-14 lg:grid-cols-3 lg:gap-10">
