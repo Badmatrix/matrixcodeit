@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Fade } from "react-awesome-reveal";
 import SkillItem from "./SkillItem";
 import Heading from "../ui/Heading";
@@ -60,9 +61,10 @@ export default function SkillsTech() {
     <Sections className="">
       <Fade direction="left" triggerOnce>
         <Heading>skill</Heading>
+        <p className="">Technology I've worked & dabbled with:</p>
       </Fade>
       {/* <Fade> */}
-      <ul className="flex flex-wrap gap-3 mx-3">
+      <ul className="mx-3 flex flex-wrap gap-3">
         {technologies.map((item) => (
           <SkillItem key={item.id} item={item} />
         ))}

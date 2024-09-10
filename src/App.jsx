@@ -11,9 +11,9 @@ import SkillsTech from "./components/SkillsTech";
 export default function App() {
   const [openModal, setOpenModal] = useState(false);
   const { sticky, stickyRef, headerRef } = useSticky();
-  const aboutRef = useRef(null)
-  const contactRef = useRef(null)
-  const projectRef=useRef(null)
+  const aboutRef = useRef(null);
+  const contactRef = useRef(null);
+  const projectRef = useRef(null);
 
   useEffect(
     function () {
@@ -26,20 +26,19 @@ export default function App() {
   function handleToggle() {
     setOpenModal((open) => !open);
   }
-  
+
   return (
     <div className="text-lg">
       <Header
         openModal={openModal}
         handleToggle={handleToggle}
-        
         sticky={sticky}
         stickyRef={stickyRef}
         headerRef={headerRef}
         contactRef={contactRef}
       />
       <Aboutme aboutRef={aboutRef} />
-      <SkillsTech/>
+      <SkillsTech />
       <Projects projectRef={projectRef} />
 
       <ContactMe contactRef={contactRef} />
