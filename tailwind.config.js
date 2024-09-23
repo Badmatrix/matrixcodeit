@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -7,9 +8,12 @@ export default {
         pacifico: ["Pacifico"],
         roboto: ["Roboto"],
         quicksand: ["Quicksand"],
-        nerko:['Nerko one']
+        nerko: ["Nerko one"],
+      },
+      rotate: {
+        360: "360deg",
       },
     },
   },
-  plugins: [],
+  plugins: [require("@xpd/tailwind-3dtransforms")],
 };

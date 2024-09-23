@@ -40,14 +40,14 @@ export default function Modal({
           onClick={handleToggle}
         />
       </div>
+        <Fade cascade direction="down" duration={500}>
       <ul className="float-right space-y-8 px-5 text-right text-xl capitalize lg:px-10">
-        <Fade cascade direction="down">
           <li onClick={gotoAbout}>about me</li>
           <li onClick={gotoProject}>projects</li>
           <li onClick={gotoContact}>contact</li>
           {/* <li><a href="#" target="_blank" rel="noopener noreferrer"></a></li> */}
-        </Fade>
       </ul>
+        </Fade>
     </div>
   );
 }

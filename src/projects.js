@@ -15,7 +15,7 @@ export const projects = [
     image2: "/projects/fastpizza 2.jpg",
     text: "",
     link: "https://matrixfast-pizza.vercel.app/",
-    tech: ["React", "Tailwindcss", "RTK","Redux"],
+    tech: ["React", "Tailwindcss", "RTK", "Redux"],
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ export const projects = [
     image2: "/projects/savory 2.jpg",
     text: "",
     link: "https://stage3-task.vercel.app",
-    tech: ["React", "Tailwindcss","RTK"],
+    tech: ["React", "Tailwindcss", "RTK"],
   },
 
   {
@@ -53,7 +53,7 @@ export const projects = [
     image2: "/projects/mapty 2.jpg",
     text: "",
     link: "https://mapping-matrix.vercel.app/",
-    tech: ["Html","TailwindCss","Javascript"],
+    tech: ["Html", "TailwindCss", "Javascript"],
   },
   {
     id: 5,
@@ -64,4 +64,13 @@ export const projects = [
     link: "https://weather-app-psi-black.vercel.app/",
     tech: ["Html", "css", "js"],
   },
+  // {
+  //   id: 8,
+  //   name: "product cart",
+  //   image1: "/projects/weather 1.jpg",
+  //   image2: "/projects/weather 2.jpg",
+  //   text: "",
+  //   link: "https://product-cart-iota.vercel.app",
+  //   tech: ["react", "TailwindCss"],
+  // },
 ];

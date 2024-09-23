@@ -41,7 +41,7 @@ export default function Header({
           stickyRef={stickyRef}
         />
         <main className="mx-5 lg:mx-10 lg:my-5 lg:flex lg:flex-row-reverse lg:items-center lg:justify-center lg:gap-x-10 lg:py-7">
-          <figure className="mx-auto aspect-square h-fit w-52 lg:aspect-auto lg:w-1/4">
+          <figure className="mx-auto aspect-square h-fit w-40 sm:w-52 lg:aspect-auto lg:w-2/6">
             <img
               src="/slackDP.jpg"
               alt="my image"
@@ -55,8 +55,8 @@ export default function Header({
             </Fade>
           </figure>
 
-          <section className="mx-auto lg:w-2/4">
-            <div className="text-ellipsis text-base leading-7 md:text-lg">
+          <section className="mx-auto lg:w-3/4">
+            <div className="mx-auto text-justify text-base leading-7 sm:w-5/6 md:text-lg lg:w-full">
               <HeaderIntro />
               <Fade direction="up" triggerOnce>
                 I drive to create exceptional digital experiences, with a strong

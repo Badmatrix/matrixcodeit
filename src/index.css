@@ -18,6 +18,10 @@
         @apply overflow-hidden
     }
 
+    .image-rotate {
+        transform: rotate-3d(1, 1, 0, 20deg);
+    }
+
     .modal li {
         @apply cursor-pointer transition-all ease-in-out duration-500 w-fit hover:text-slate-400 py-2
     }
