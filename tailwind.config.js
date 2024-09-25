@@ -10,9 +10,7 @@ export default {
         quicksand: ["Quicksand"],
         nerko: ["Nerko one"],
       },
-      rotate: {
-        360: "360deg",
-      },
+     
     },
   },
   plugins: [require("@xpd/tailwind-3dtransforms")],
