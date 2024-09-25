@@ -33,7 +33,11 @@ export default function Modal({
   return (
     <section className="fixed left-0 top-0 z-20 h-full w-full overflow-hidden backdrop-blur-sm">
       <div
+<<<<<<< HEAD
         className={`absolute right-0 top-0 h-screen w-0 transform overflow-x-hidden bg-neutral-800 transition-all duration-500 ease-linear ${openModal ? "w-full sm:w-1/2 md:w-1/3" : "w-0"}`}
+=======
+        className={`absolute right-0 top-0 h-screen w-0 transform overflow-x-hidden bg-neutral-800 transition-all duration-1000 ease-linear ${openModal ? "w-1/2" : "w-0"}`}
+>>>>>>> 637923c55e201aaff3cf15cd1102b33987d6138b
       >
         <div className="modal space-y-8">
           <div className="px-5 py-3">
