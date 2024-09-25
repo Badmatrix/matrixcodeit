@@ -9,8 +9,8 @@ import Projects from "./components/Projects";
 import SkillsTech from "./components/SkillsTech";
 
 export default function App() {
-  const [openModal, setOpenModal] = useState(false);
   const { sticky, stickyRef, headerRef } = useSticky();
+  const [openModal, setOpenModal] = useState(false);
   const aboutRef = useRef(null);
   const contactRef = useRef(null);
   const projectRef = useRef(null);
@@ -28,7 +28,7 @@ export default function App() {
   }
 
   return (
-    <div className="text-lg">
+    <div className="text-lg relative">
       <Header
         openModal={openModal}
         handleToggle={handleToggle}
@@ -49,6 +49,7 @@ export default function App() {
           projectRef={projectRef}
           contactRef={contactRef}
           aboutRef={aboutRef}
+          openModal={ openModal}
         />
       ) : (
         ""

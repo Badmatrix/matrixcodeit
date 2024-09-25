@@ -5,7 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 export default function NavBar({ openModal, handleToggle, sticky, stickyRef }) {
   return (
     <div
-      className={`w-full z-50 ${
+      className={`w-full z-10 ${
         sticky ? "fixed top-0 left-0 bg-neutral-800" : "bg-gray-600/10"
       }`}
     >
