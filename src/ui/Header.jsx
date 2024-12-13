@@ -16,10 +16,10 @@ export default function Header({
   contactRef
 }) {
   function handleDownload() {
-    const pdfUrl = "HAMEED OLADIMEJI CV FE.pdf";
+    const pdfUrl = "BADMUS HAMEED CV FRE.pdf";
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "HAMEED OLADIMEJI cv.pdf"; // specify the filename
+    link.download = "HAMEED OLADIMEJI CV.pdf"; // specify the filename
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

@@ -9,6 +9,16 @@ export const projects = [
   //   tech: ["React", "styled component", "tanstack query"],
   // },
   {
+    id: 6,
+    name: "linkwave",
+    image1: "/projects/linkwave.jpg",
+    image2: "/projects/linkwave2.jpg",
+    text: "",
+    link: "https://linkfushion.vercel.app/",
+    tech: ["React", "Tailwindcss", "material ui", "firebase"],
+  },
+
+  {
     id: 2,
     name: "fast pizza",
     image1: "/projects/fastpizza 1.jpg",
